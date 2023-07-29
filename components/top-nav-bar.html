@@ -340,17 +340,3 @@
         </div>
     </nav>
 </div>
-
-<script>
-    function prependHostToImageSource() {
-        let allImages = document.getElementsByTagName('img'); // get all img elements
-        for (let i = 0; i < allImages.length; i++) {
-            allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
-            // prepend current host to src
-            allImages[i].src = window.location.origin + allImages[i].src;
-        }
-    }
-    if(window.location.origin == 'https://olegshcherbak.github.io'){
-        prependHostToImageSource(); // call the function
-    }
-</script>
