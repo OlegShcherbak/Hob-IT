@@ -220,18 +220,20 @@
          $('#iq-sidebar').load('./components/sidebar-left.html');
          $('#right-sidebar').load('./components/right-sidebar.html');
          $('#footer').load('./components/footer.html');
-         function prependHostToImageSource() {
-            let allImages = document.querySelectorAll('.component-element img'); // get all img elements
-            for (let i = 0; i < allImages.length; i++) {
-               allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
-               // prepend current host to src
 
+      });
+      function prependHostToImageSource() {
+         let allImages = document.querySelectorAll('.component-element img'); // get all img elements
+         for (let i = 0; i < allImages.length; i++) {
+            if (!allImages[i].src.includes('Hob-IT')) {
+               allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
+               allImages[i].src = allImages[i].src.replace('../', 'https://olegshcherbak.github.io/Hob-IT/');
             }
          }
-         if (window.location.origin == 'https://olegshcherbak.github.io') {
-            prependHostToImageSource(); // call the function
-         }
-      });
+      }
+      if (window.location.origin == 'https://olegshcherbak.github.io') {
+         prependHostToImageSource(); // call the function
+      }
    </script>
 
    <!-- offcanvas start -->
