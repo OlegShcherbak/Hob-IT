@@ -1448,11 +1448,11 @@
          $('#right-sidebar').load('./components/right-sidebar.html');
          $('#footer').load('./components/footer.html');
          function prependHostToImageSource() {
-            let allImages = document.querySelectorAll('.component - element img'); // get all img elements
+            let allImages = document.querySelectorAll('.component-element img'); // get all img elements
             for (let i = 0; i < allImages.length; i++) {
-               if (!allImages[i].src.includes('Hob - IT')) {
+               if (!allImages[i].src.includes('Hob-IT')) {
                   allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
-                     allImages[i].src = allImages[i].src.replace('../', 'https:/ / olegshcherbak.github.io / Hob - IT /');
+                     allImages[i].src = allImages[i].src.replace('../', 'https://olegshcherbak.github.io/Hob-IT/');
                }
             }
          }
