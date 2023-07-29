@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SocialV | Responsive Bootstrap 5 Admin Dashboard Template</title>
+    <title>Hob-IT</title>
 
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/libs.min.css">
@@ -26,13 +26,13 @@
     <!-- loader END -->
     <!-- Wrapper Start -->
     <div class="wrapper">
-      <div class="iq-sidebar  sidebar-default component-element " id="iq-sidebar"></div><!---->
+        <div class="iq-sidebar  sidebar-default component-element " id="iq-sidebar"></div><!---->
 
-      <div class="iq-top-navbar component-element" id="iq-top-navbar"></div><!---->
+        <div class="iq-top-navbar component-element" id="iq-top-navbar"></div><!---->
 
-      <div class="right-sidebar-mini right-sidebar component-element" id="right-sidebar"><!---->
+        <div class="right-sidebar-mini right-sidebar component-element" id="right-sidebar"><!---->
 
-      </div><!---->
+        </div><!---->
         <div class="header-for-bg">
             <div class="background-header position-relative">
                 <img src="./assets/images/page-img/profile-bg4.jpg" class="img-fluid w-100" alt="header-bg">
@@ -527,26 +527,26 @@
     <script src="./vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
     <script src="./assets/js/lottie.js"></script>
     <script>
-      $(function () {
-         $('#iq-top-navbar').load('./components/top-nav-bar.html');
-         $('#iq-sidebar').load('./components/sidebar-left.html');
-         $('#right-sidebar').load('./components/right-sidebar.html');
-         $('#footer').load('./components/footer.html');
+        $(function () {
+            $('#iq-top-navbar').load('./components/top-nav-bar.html');
+            $('#iq-sidebar').load('./components/sidebar-left.html');
+            $('#right-sidebar').load('./components/right-sidebar.html');
+            $('#footer').load('./components/footer.html');
 
-      });
-      function prependHostToImageSource() {
-         let allImages = document.querySelectorAll('.component-element img'); // get all img elements
-         for (let i = 0; i < allImages.length; i++) {
-            if (!allImages[i].src.includes('Hob-IT')) {
-               allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
-               allImages[i].src = allImages[i].src.replace('../', 'https://olegshcherbak.github.io/Hob-IT/');
+        });
+        function prependHostToImageSource() {
+            let allImages = document.querySelectorAll('.component-element img'); // get all img elements
+            for (let i = 0; i < allImages.length; i++) {
+                if (!allImages[i].src.includes('Hob-IT')) {
+                    allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
+                    allImages[i].src = allImages[i].src.replace('../', 'https://olegshcherbak.github.io/Hob-IT/');
+                }
             }
-         }
-      }
-      if (window.location.origin == 'https://olegshcherbak.github.io') {
-         prependHostToImageSource(); // call the function
-      }
-   </script>
+        }
+        if (window.location.origin == 'https://olegshcherbak.github.io') {
+            prependHostToImageSource(); // call the function
+        }
+    </script>
 
 
     <!-- offcanvas start -->
