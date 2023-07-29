@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Hob-IT | Responsive Bootstrap 5 Admin Dashboard Template</title>
+   <title>Hob-IT</title>
 
    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
    <link rel="stylesheet" href="./assets/css/libs.min.css">
@@ -1066,12 +1066,12 @@
          $('#iq-sidebar').load('./components/sidebar-left.html');
          $('#right-sidebar').load('./components/right-sidebar.html');
          $('#footer').load('./components/footer.html');
-          function prependHostToImageSource() {
+         function prependHostToImageSource() {
             let allImages = document.querySelectorAll('.component-element img'); // get all img elements
             for (let i = 0; i < allImages.length; i++) {
                allImages[i].src = allImages[i].src.replace('https://olegshcherbak.github.io/', 'https://olegshcherbak.github.io/Hob-IT/');
                // prepend current host to src
-               
+
             }
          }
          if (window.location.origin == 'https://olegshcherbak.github.io') {
