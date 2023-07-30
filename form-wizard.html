@@ -778,8 +778,8 @@
                     <div class="col-sm-12">
                         <div class="card position-relative inner-page-bg bg-primary" style="height: 150px;">
                             <div class="inner-page-title">
-                                <h3 class="text-white">Simple Wizard Page</h3>
-                                <p class="text-white">lorem ipsum</p>
+                                <h3 class="text-white">Кроки до нових знайомств</h3>
+                                <p class="text-white"></p>
                             </div>
                         </div>
                     </div>
@@ -787,7 +787,7 @@
                         <div class="card">
                             <div class="card-header d-flex justify-content-between">
                                 <div class="header-title">
-                                    <h4 class="card-title">Simple Wizard</h4>
+                                    <h4 class="card-title"></h4>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -795,22 +795,22 @@
                                     <ul id="top-tab-list" class="p-0 row list-inline">
                                         <li class="col-lg-3 col-md-6 text-start mb-2 active" id="account">
                                             <a href="javascript:void();">
-                                                <i class="ri-lock-unlock-line"></i><span>Account</span>
+                                                <i class="ri-lock-unlock-line"></i><span>Про себе</span>
                                             </a>
                                         </li>
                                         <li id="personal" class="col-lg-3 col-md-6 mb-2 text-start">
                                             <a href="javascript:void();">
-                                                <i class="ri-user-fill"></i><span>Personal</span>
+                                                <i class="ri-user-fill"></i><span>Спеціалізація</span>
                                             </a>
                                         </li>
                                         <li id="payment" class="col-lg-3 col-md-6 mb-2 text-start">
                                             <a href="javascript:void();">
-                                                <i class="ri-camera-fill"></i><span>Image</span>
+                                                <i class="ri-camera-fill"></i><span>Хоббі</span>
                                             </a>
                                         </li>
                                         <li id="confirm" class="col-lg-3 col-md-6 mb-2 text-start">
                                             <a href="javascript:void();">
-                                                <i class="ri-check-fill"></i><span>Finish</span>
+                                                <i class="ri-check-fill"></i><span>Успіх</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -819,46 +819,59 @@
                                         <div class="form-card text-start">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h3 class="mb-4">Account Information:</h3>
+                                                    <h3 class="mb-4"></h3>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 1 - 4</h2>
+                                                    <h2 class="steps">Крок 1 - 4</h2>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Email: *</label>
-                                                        <input type="email" class="form-control" name="email"
-                                                            placeholder="Email Id" />
+                                            <div class=" row align-items-center">
+                                                <div class="form-group col-sm-6">
+                                                    <label for="fname" class="form-label">Імя:</label>
+                                                    <input type="text" class="form-control" id="fname"
+                                                        placeholder="Bni">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label for="lname" class="form-label">Прізвище:</label>
+                                                    <input type="text" class="form-control" id="lname"
+                                                        placeholder="Jhon">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label for="uname" class="form-label">User Name:</label>
+                                                    <input type="text" class="form-control" id="uname"
+                                                        placeholder="Bni@01">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label for="cname" class="form-label">Місто:</label>
+                                                    <input type="text" class="form-control" id="cname"
+                                                        placeholder="Atlanta">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label class="form-label d-block">Стать:</label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio10"
+                                                            value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">
+                                                            Чоловіча</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio11"
+                                                            value="option1">
+                                                        <label class="form-check-label"
+                                                            for="inlineRadio11">Жіноча</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Username: *</label>
-                                                        <input type="text" class="form-control" name="uname"
-                                                            placeholder="UserName" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Password: *</label>
-                                                        <input type="password" class="form-control" name="pwd"
-                                                            placeholder="Password" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Confirm Password: *</label>
-                                                        <input type="password" class="form-control" name="cpwd"
-                                                            placeholder="Confirm Password" />
-                                                    </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label for="dob" class="form-label">Дата народження:</label>
+                                                    <input class="form-control" id="dob" placeholder="1984-01-24">
                                                 </div>
                                             </div>
                                         </div>
                                         <button type="button" name="next"
                                             class="btn btn-primary next action-button float-end"
-                                            value="Next">Next</button>
+                                            value="Next">Далі</button>
                                     </fieldset>
                                     <fieldset>
                                         <div class="form-card text-start">
@@ -867,7 +880,7 @@
                                                     <h3 class="mb-4">Personal Information:</h3>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 2 - 4</h2>
+                                                    <h2 class="steps">Крок 2 - 4</h2>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -912,27 +925,44 @@
                                         <div class="form-card text-start">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h3 class="mb-4">Image Upload:</h3>
+                                                    <h3 class="mb-4"></h3>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 3 - 4</h2>
+                                                    <h2 class="steps">Крок 3 - 4</h2>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Upload Your Photo:</label>
-                                                <input type="file" class="form-control" name="pic" accept="image/*">
+                                            <div class="form-group col-sm-6">
+                                                <label class="form-label">Хоббі:</label>
+                                                <select class="form-select" aria-label="Default select example 2">
+                                                    <option>Кемпінг </option>
+                                                    <option>Плавання</option>
+                                                    <option>Велоспорт</option>
+                                                    <option>Полювання</option>
+                                                    <option>Рибловля</option>
+                                                </select>
                                             </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Upload Signature Photo:</label>
-                                                <input type="file" class="form-control" name="pic-2" accept="image/*">
+                                            <!-- <div class="form-group col-sm-6">
+                                                <label class="form-label">Інтереси:</label>
+                                                <select class="form-select" aria-label="Default select example 2">
+                                                    <option>46-62</option>
+                                                    <option>63  </option>
+                                                </select>
+                                            </div> -->
+                                            <div class="form-group col-sm-6">
+                                                <label class="form-label">Івенти:</label>
+                                                <select class="form-select" aria-label="Default select example 2">
+                                                    <option>Поїздка на Дністер</option>
+                                                    <option>Похід у Карпати  </option>
+                                                    <option>Майстер-клас з гончарства </option>
+                                                </select>
                                             </div>
                                         </div>
                                         <button type="button" name="next"
                                             class="btn btn-primary next action-button float-end"
-                                            value="Submit">Submit</button>
+                                            value="Submit">Надіслати</button>
                                         <button type="button" name="previous"
                                             class="btn btn-dark previous action-button-previous float-end me-3"
-                                            value="Previous">Previous</button>
+                                            value="Previous">Назад</button>
                                     </fieldset>
                                     <fieldset>
                                         <div class="form-card">
@@ -941,11 +971,11 @@
                                                     <h3 class="mb-4 text-left">Finish:</h3>
                                                 </div>
                                                 <div class="col-5">
-                                                    <h2 class="steps">Step 4 - 4</h2>
+                                                    <h2 class="steps">Крок 4 - 4</h2>
                                                 </div>
                                             </div>
                                             <br><br>
-                                            <h2 class="text-success text-center"><strong>SUCCESS !</strong></h2>
+                                            <h2 class="text-success text-center"><strong>ВІТАЄМО !</strong></h2>
                                             <br>
                                             <div class="row justify-content-center">
                                                 <div class="col-3"> <img src="./assets/images/page-img/img-success.png"
